@@ -1,16 +1,23 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+import random
+def getAnswer(answerNumber):
+    if answerNumber == 1:
+        return 'It is certain.'
+    elif answerNumber == 2:
+        return 'It is decidedly no.'
+    elif answerNumber == 3:
+        return 'Yes.'
+    elif answerNumber == 4:
+        return 'Future is hazy. Try again.'
+    elif answerNumber == 5:
+        return 'Ask again later'
+    elif answerNumber == 6:
+        return 'Concentrate and ask again'
+    elif answerNumber == 7:
+        return 'My reply is no'
+    elif answerNumber == 8:
+        return 'Outlook not so good'
+    elif answerNumber == 9:
+        return 'Very Doubtful'
+r = random.randint(1, 9)
+fortune = getAnswer(r)
+print(fortune)
